@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NEWT To-Do list</title>
+    <link rel="stylesheet" href="todo.css" />
+  </head>
+  <body>
+    <!--navbarSection--->
+    <nav class="navbar">
+      <div class="navbar_container">
+        <a href="#" id="navbar_logo"><i class="fas fa-gem"></i> NEWT</a>
+        <div class="navbar_toggle" id="mobile-menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+        <ul class="navbar_menu">
+          <li class="navbar_item">
+            <a href="index.html" class="navbar_links"> Home </a>
+          </li>
+          <li class="navbar_item">
+            <a href="about.html" class="navbar_links"> About </a>
+          </li>
+          <li class="navbar_item">
+            <a href="#" class="navbar_links"> Product </a>
+          </li>
+
+          <li class="navbar_btn">
+            <a href="signUp.html" class="button">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!--End of navSection-->
+
+    <header>
+      <h1>Daily To-Do List</h1>
+      <form action="" id="new-task-form">
+        <input
+          type="text"
+          id="new-task-input"
+          placeholder="What do you want to do today?"
+        />
+        <input type="submit" id="new-task-submit" value="Add a task" />
+      </form>
+    </header>
+
+    <main>
+      <section class="task-list">
+        <h2>Tasks</h2>
+        <div id="tasks">
+          <!---  <div class="task">
+          <div class="content">
+            <input type="text" class="text" value="My shiny task" readonly />
+          </div>
+          <div class="actions">
+            <button class="edit">Edit</button>
+            <button class="delete">Delete</button>
+          </div>-->
+        </div>
+      </section>
+    </main>
+
+    <!--Footer Section-->
+
+    <div class="footer_container">
+      <div class="footer_links">
+        <div class="footer_link-wrapper">
+          <div class="footer_link-items">
+            <h2>About Us</h2>
+            <a href="about.html">How it works</a>
+            <a href="testi.html">Testimonials</a>
+            <a href="about.html">Careers</a>
+            <a href="about.html">Investments</a>
+            <a href="/">Terms Of Services</a>
+          </div>
+          <div class="footer_link-items">
+            <h2>Contact Us</h2>
+            <a href="signUp.html">Contact</a>
+            <a href="/">Support</a>
+            <a href="todo.html">To-Do List</a>
+            <a href="/">Sponsorships</a>
+          </div>
+        </div>
+        <div class="footer_link-wrapper">
+          <div class="footer_link-items">
+            <h2>Videos</h2>
+            <a href="/">Submit Videos</a>
+            <a href="/">Ambassadors</a>
+            <a href="/">Agency</a>
+            <a href="/">Influencer</a>
+          </div>
+          <div class="footer_link-items">
+            <h2>Social Media</h2>
+            <a href="/">Instagram</a>
+            <a href="/">Facebook</a>
+            <a href="/">YouTube</a>
+            <a href="/">Twitter</a>
+          </div>
+        </div>
+      </div>
+      <div class="social_media">
+        <div class="social_media-wrap">
+          <div class="footer_logo">
+            <a href="/" id="footer_logo"><i class="fas fa-gem"></i>NEWT</a>
+          </div>
+          <p class="website_right">© NEWT 2020. All rights reserved</p>
+          <div class="social_icons">
+            <a href="/" class="social_icon-link" target="_blank">
+              <i class="fab fa-facebook"></i>
+            </a>
+            <a href="/" class="social_icon-link" target="_blank">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="/" class="social_icon-link" target="_blank">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="/" class="social_icon-link" target="_blank">
+              <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="/" class="social_icon-link" target="_blank">
+              <i class="fab fa-youtube"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="todo.js">
+      console.log(localStorage);
+    </script>
+  </body>
+</html>
